@@ -58,6 +58,6 @@ form.onsubmit = async (e) => {
   const resp = await API.reg(data);
   if (resp.code === 0) {
     alert('注册成功，点击确认跳转到登录页');
-    location.href = './login.html';
+    location.href = baseURL + 'login.html';
   }
 };

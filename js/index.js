@@ -6,7 +6,7 @@
   if (!user) {
     //登录失败
     alert('未登录或登录已过期，请重新登录');
-    location.href = './login.html';
+    location.href = baseURL + 'login.html';
     return;
   }
 
@@ -28,7 +28,7 @@
   // 注册注销事件
   doms.close.onclick = () => {
     API.loginOut();
-    location.href = './login.html';
+    location.href = baseURL + 'login.html';
   };
 
   //注册聊天框提交事件

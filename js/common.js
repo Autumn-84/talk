@@ -9,3 +9,5 @@ function $$(selector) {
 function $$$(tagName) {
   return document.createElement(tagName);
 }
+
+var baseURL = '/talk/';

@@ -32,7 +32,7 @@ form.onsubmit = async (e) => {
   const resp = await API.login(data);
   if (resp.code === 0) {
     alert('登录成功，点击确认跳转到聊天页');
-    location.href = './index.html';
+    location.href = baseURL + 'index.html';
   } else {
     // alert('请检查账号和密码');
     loginIdValidator.p.innerText = '账号或密码错误';
