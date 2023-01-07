@@ -1,0 +1,83 @@
+.footer {
+  background: #fff;
+}
+.footer .footer-top {
+  height: 75px;
+  padding: 27px 0;
+  color: #616161;
+  border-bottom: 1px solid #e0e0e0;
+}
+.footer .footer-top a {
+  width: 20%;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border-right: 1px solid #e0e0e0;
+}
+.footer .footer-top a:last-child {
+  border-right: none;
+}
+.footer .footer-top a .iconfont {
+  font-size: 26px;
+  vertical-align: -4px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  margin: 40px 0;
+}
+.footer-bottom .footer-links {
+  width: 160px;
+  text-align: left;
+  color: #757575;
+}
+.footer-bottom .footer-links h3 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #424242;
+  margin: 6px 0;
+}
+.footer-bottom .footer-links a {
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-contact {
+  width: 245px;
+  text-align: center;
+  border-left: 1px solid #e0e0e0;
+}
+.footer-contact .footer-phone {
+  font-size: 22px;
+  color: #ff6700;
+}
+.footer-contact .footer-phone-desc {
+  color: #616161;
+}
+.footer-contact .footer-service {
+  color: #ff6700;
+  border: 1px solid #ff6700;
+  width: 118px;
+  height: 30px;
+  display: block;
+  margin: 6px auto;
+  line-height: 30px;
+}
+.footer-contact .footer-service .iconfont {
+  font-size: 14px;
+  vertical-align: -1px;
+}
+.footer-contact .footer-service:hover {
+  background: #ff6700;
+  color: #fff;
+}
+.footer-contact .footer-focus {
+  color: #616161;
+}
+.footer-contact .footer-focus .iconfont {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.footer-contact .footer-focus .iconfont:hover {
+  color: #ff6700;
+}

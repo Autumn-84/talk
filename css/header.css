@@ -1,0 +1,147 @@
+.header {
+  background: #fff;
+  height: 100px;
+  position: relative;
+}
+
+/* logo区域样式 */
+.header .header-logo h1 {
+  display: none;
+}
+.header .header-logo {
+  background: url(../img/logo.png);
+  width: 56px;
+  height: 56px;
+  background-size: 100% 100%;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+/* header menu区域样式 */
+.header .header-menu > a {
+  /* background: red; */
+  height: 100px;
+  font-size: 16px;
+  line-height: 100px;
+  padding: 0 10px;
+}
+
+/* 二级菜单样式 */
+.header-submenu {
+  background: #fff;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  border-top: 1px solid #eee;
+  z-index: 30;
+}
+.header-submenu a {
+  /* background: lightyellow; */
+  width: 204px;
+  padding: 30px 0;
+  text-align: center;
+}
+.header-submenu a .header-cover {
+  border-right: 1px solid #eee;
+}
+.header-submenu a:last-child .header-cover {
+  border-right: none;
+}
+.header-submenu .header-cover img {
+  width: 160px;
+  height: 118px;
+}
+.header-submenu .header-name {
+  font-size: 12px;
+  color: #333;
+  margin-top: 10px;
+}
+.header-submenu .header-price {
+  color: #ff6700;
+  font-size: 12px;
+}
+
+/* 显示二级菜单 */
+.header-menu:hover .header-submenu {
+  display: block;
+}
+
+/* 搜索区域 */
+.header-search {
+  margin-top: 25px;
+  position: relative;
+}
+.header-search .header-text {
+  height: 50px;
+  width: 245px;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 50px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.header-searchicon {
+  width: 55px;
+  height: 50px;
+  background: #fff;
+  outline: none;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+.header-searchicon i {
+  font-size: 20px;
+  color: #616161;
+}
+
+/* 搜索建议 */
+.header-suggest {
+  background: #fff;
+  width: 245px;
+  border: 1px solid #ff6700;
+  border-top: none;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  z-index: 40;
+  display: none;
+}
+.header-suggest a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  color: inherit;
+}
+.header-suggest a:hover {
+  background: #eee;
+}
+/* 搜索建议结束 */
+
+/* 鼠标移入样式 */
+.header-search .header-text:hover {
+  border: 1px solid #aaa;
+}
+.header-search .header-text:hover ~ .header-searchicon {
+  border: 1px solid #aaa;
+  border-left: none;
+}
+.header-search .header-searchicon:hover {
+  background: #ff6700;
+  border: 1px solid #ff6700;
+  cursor: pointer;
+}
+.header-search .header-searchicon:hover i {
+  color: #fff;
+}
+/* 聚焦样式 */
+.header-search .header-text:focus {
+  border: 1px solid #ff6700;
+}
+.header-search .header-text:focus ~ .header-searchicon {
+  border: 1px solid #ff6700;
+  border-left: none;
+}
+.header-search .header-text:focus ~ .header-suggest {
+  display: block;
+}

@@ -1,0 +1,125 @@
+/* 横幅区域 */
+.banner {
+  height: 460px;
+  position: relative;
+}
+.banner .banner-cover {
+  width: 1226px;
+  height: 460px;
+  background: red;
+}
+.banner .banner-cover img {
+  display: block;
+  width: 1226px;
+  height: 460px;
+}
+.banner .banner-pointer {
+  /* 箭头的统一样式 */
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  color: #b8c3cb;
+  /* background: rgba(0, 0, 0, 0); */
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+}
+.banner .banner-pointer-right {
+  right: 0;
+  top: 50%;
+  margin-top: -35px;
+}
+.banner .banner-pointer-left {
+  left: 234px;
+  top: 50%;
+  margin-top: -35px;
+}
+.banner .banner-pointer .iconfont {
+  font-size: 30px;
+}
+.banner .banner-pointer:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* 缩略图圆点 */
+.banner .banner-dots {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.banner .banner-dots span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 4px;
+  border: 2px solid rgba(225, 225, 225, 0.3);
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.banner .banner-dots span.banner-dots-selected {
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  background: rgba(225, 225, 225, 0.3);
+}
+
+/* 横幅菜单默认样式 开始 */
+.banner-menu {
+  width: 234px;
+  height: 460px;
+  background: rgba(105, 101, 101, 0.6);
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.banner-menu-item {
+  color: #fff;
+  padding: 0 20px 0 30px;
+  height: 42px;
+  line-height: 42px;
+}
+/* 横幅菜单默认样式 结束 */
+
+/* 详细菜单样式 */
+.banner-menu .banner-sub-menu {
+  background: #fff;
+  position: absolute;
+  left: 234px;
+  top: 0;
+  outline: 1px solid #eee;
+  width: 992px;
+  height: 100%;
+  display: none;
+}
+.banner-menu .banner-sub-menu a {
+  width: 25%;
+  height: 16.666%;
+  /* outline: 1px solid; */
+  padding: 0 20px;
+}
+.banner-menu .banner-sub-menu a img {
+  width: 40px;
+  height: 40px;
+  margin-top: 17px;
+  margin-right: 12px;
+  line-height: 40px;
+}
+.banner-menu .banner-sub-menu a span {
+  width: 154px;
+  margin-top: 27px;
+  /* 溢出文本隐藏 */
+  overflow: hidden;
+  /* 文本溢出显示省略号 */
+  text-overflow: ellipsis;
+  /* 禁止文字换行 */
+  white-space: nowrap;
+}
+
+/* 鼠标移入li区域样式  */
+.banner-menu li:hover {
+  background: #ff6700;
+}
+.banner-menu li:hover .banner-sub-menu {
+  display: block;
+}
