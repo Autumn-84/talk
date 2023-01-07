@@ -1,51 +1,27 @@
-/* common.css通用的css样式 */
+@import url('//at.alicdn.com/t/font_3318742_9901gcdpweg.css');
+
 * {
-	/* 清除浏览器的默认样式 */
-	margin: 0;
-	padding: 0;
-	/* 清除li的默认样式 */
-	list-style: none;
-	/* 盒子的尺寸计算方式修改为包含 margin和padding */
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.iconfont {
+  font-size: inherit;
+  color: inherit;
+}
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 a {
-	/* 清除a元素的下划线 */
-	text-decoration: none;
-	/* 使a元素的颜色继承父元素的颜色，使a和其他 div span 元素属性类似 */
-	color: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
-/* 鼠标移入a元素的统一样式 */
-a:hover {
-	color: #ff6700;
-}
-
-html {
-	/* 页面上大部分文字的颜色 */
-	color: #333;
-	/* 页面最小宽度: 页面大小小于最小宽度会出现滚动条 */
-	min-width: 1226px;
-	/* 页面默认文字  size/line-height family 字体名称中间有空格加上''单引号，名称中没有空格的文字可以不加*/
-	font: 14px/1.5 'Helvetica Neue', Helvetica, Arial, 'Microsoft Yahei',
-		'Hiragino Sans GB', 'Heiti SC', 'WenQuanYi Micro Hei', sans-serif;
-}
-
-/* 浮动处理 */
-.fl {
-	float: left;
-}
-.fr {
-	float: right;
-}
-.clearfix::after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-/* 通用容器 */
-.container {
-	width: 1226px;
-	margin-left: auto;
-	margin-right: auto;
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
